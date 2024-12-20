@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    color: #212529;
+    font-family: 'Arial', sans-serif;
+}
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+}
+.container {
+    flex: 1;
+    margin-top: 30px;
+}
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+}
+#participants ul {
+    padding: 0;
+    list-style: none;
+}
+#participants li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: #ffffff;
+}
+.volume-control {
+    width: 150px;
+}
+audio {
+    margin-top: 20px;
+}
+input, button {
+    margin-top: 10px;
+}
+#myId {
+    font-weight: bold;
+    color: #007bff;
+}
+#screenShareWindow {
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+#screenShareVideo {
+    width: 100%;
+    height: auto;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+#screenShareControls {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

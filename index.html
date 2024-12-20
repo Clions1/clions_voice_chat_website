@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clions Voice Chat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="text-center">Clions Sesli Sohbet Sitesi</h1>
+            <p class="text-center">
+                <b>Bağlanmak için arkadaşınızın kullanıcı adını girin veya kullanıcı adınızı paylaşın.</b>
+            </p>
+        </div>
+    </header>
+    <main>
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <input type="text" id="friendIdInput" class="form-control mb-3" placeholder="Arkadaşınızın kullanıcı adı">
+                    <div class="d-flex justify-content-center gap-2">
+                        <button id="startCall" class="btn btn-primary">Görüşmeye Başla</button>
+                        <button id="muteButton" class="btn btn-secondary">Mikrofonu Kapat</button>
+                    </div>
+                    <p class="mt-3">
+                        <b>Sizin Kullanıcı Adınız:</b> <span id="myId"></span>
+                    </p>
+                </div>
+            </div>
+
+            <div id="participants" class="mt-4">
+                <h2>Katılımcılar:</h2>
+                <ul id="participantList" class="list-group"></ul>
+            </div>
+
+            <audio id="localAudio" autoplay muted></audio>
+            <audio id="remoteAudio" autoplay></audio>
+
+            <div id="screenShareWindow" class="mt-4">
+                <h2>Ekran Paylaşımı</h2>
+                <video id="screenShareVideo" autoplay muted controls></video>
+                <div id="screenShareControls">
+                    <button id="startScreenShare" class="btn btn-success">Ekran Paylaşımını Başlat</button>
+                    <button id="stopScreenShare" class="btn btn-danger">Ekran Paylaşımını Durdur</button>
+                    <button id="fullscreenButton" class="btn btn-primary">Tam Ekran Yap</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 Developed by Clions. All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+
+    <!-- Peer JS -->
+    <script src="https://cdn.jsdelivr.net/npm/peerjs@1.4.7/dist/peerjs.min.js"></script>
+    <!-- Peer JS -->
+
+    <!-- App JS -->
+    <script src="script.js"></script>
+    <!-- App JS -->
+</body>
+</html>
